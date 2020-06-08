@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Alena Denisova">
+
+  <title>Task Force for Automatic Gameplay Evaluation</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+    
+  <link href="https://fonts.googleapis.com/css2?family=Muli:wght@300&display=swap" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Automatic Gameplay Evaluation</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">About
+              <span class="sr-only">(current)</span>
+              </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="members.html">Members</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="questionnaires.html">Questionnaires</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <!-- About us -->
+<section class="py-5">
+  <div class="container">
+      <div class="row">
+          <div class="col s12 m8 l8 reg mt-5">
+    <h2 class="font-weight-light">Our mission</h2>
+    <p>Most games are consciously designed with a specific experience or vision in mind. This vision can differ significantly between games and genres. Games are commonly designed for entertainment and competition purposes, but self-expression, social critique and knowledge discovery are also valid <i>design objectives</i>. Determining whether an objective is fulfilled is often quite difficult due to the complexity of modern games and the variability of human responses. For this reason, games are commonly play-tested before being published.  They are not, however, playtested well or effectively in many cases.
+
+    <p>Play-tests are expensive and time-consuming and not every aspect of the game can be evaluated before being published. This is particularly true for games that are meant to be played for long periods of time, with large groups of people. In addition, playtests need to be designed carefully with the intended game experience in mind. However, much of the design and fine-tuning processes of a game rely on intuitive judgement and the experience of the designer. Of course, with exhaustive testing being impossible, adjustments to the game are in some cases scheduled semi-regularly (as patches) depending on observations of how the game is received. If a game does not work at all as intended (i.e. it is considered <i>broken</i>), sometimes patches may be in order to resolve the discovered problems.</p>
+
+    <p>These problems speak to the need for the game evaluation task force.  Researchers have proposed methods intended to assist game designers using methods from the field of artificial and computational intelligence (AI and CI, respectively). Many of the publications in the area of AI-assisted game design includes an automatic evaluation of a game or specific game content. The information obtained about the game and its content are usually provided to a designer in order to support their design and decision-making process. Additionally, methods in the field of <i>Artificial and Computational Intelligence in Games</i> that involve the automatic generation of content, narrative, or rules for games rely on some form of machinable evaluation of their output. We will further also be drawing on expertise from the field of sensemaking and data visualisation in order to ensure the interpretability of the evaluation approaches.</p>
+
+    <p>Clearly there is demonstrable prevalence and necessity of evaluation methods for games. Still, to our knowledge, there is a surprising lack of generality and verification regarding these methods, even in scientific publications on game design. The employed evaluation methods are typically specific to one game.  Too often, the methods neither include research on player modelling nor are validated experimentally. This is understandably the case in publications where the evaluation is not the focus of the work, as evaluation methods can usually be exchanged for another. However, we argue that employing arbitrary evaluation methods in research publications can be misleading in terms of the analysis and evaluation of the actual added value and potential applications of e.g. a content generation algorithm. On top of that, employing artificial evaluation methods can seem detached from the expectations of designers and developers in the game industry.</p>
+
+    <p>We thus propose to organise efforts towards the development, analysis, and dissemination of gameplay evaluation methods through a task force. These methods are regularly employed, but not efficiently compared and published.  No central repository for methods currently exists.  In the following, we outline how the new task force will accomplish this in the future..</p>
+              </div>
+  </div>
+<div class="row">
+    <div class="col s12 m8 l8 reg mt-5">
+    <h2 class="font-weight-light">Evaluation Error Sources</h2>
+    <p>State-of-the-art game (content) evaluation methods are often based on various assumptions that can be the source of an error in the evaluation.</p>
+      <ol>
+          <li>AI playtesting: Many approaches rely on playtraces or results generated by player AIs. However, AIs can usually not reproduce human behaviour, thus introducing an error.</li>
+          <li>Measures on playthroughs: Several approaches define measures on playtraces, such as distance to the optimal path for difficulty or the win rate. However, it is unclear whether these measures translate into something a human player would perceive while playing, independent of whether the data was collected from human playthroughs.</li>
+          <li>Additional data (bots): Some methods include more information in addition to the playtrace, such as critique via utility functions or computation cost. These methods do have potential but the resulting data requires verification.</li>
+          <li>Additional data (humans): Similarly, there are other approaches that add physiological data (e.g. brain activity) relying on methods from affective computing. These are among the most promising but unfortunately rely on the assumption that human reaction can be interpreted correctly. Additionally, employing them can be costly.</li>
+          <li>Aggregation and Coverage: Usually, values obtained from aggregation methods are simply aggregated over a set of playthroughs. However, this approach might ignore potential gamebreaking outliers. Additionally, it is rarely guaranteed that all possible types of playthroughs are covered as it would be in automatic testing.</li>
+      </ol>
+      <p>The new task force seeks to improve the state-of-the-art in game evaluation as much as possible with the eventual goal of reliable automatic evaluation of a game.</p>
+</div>
+      </div>
+      <div class="row">
+          <div class="col s12 m8 l8 reg mt-5">
+    <h2 class="font-weight-light">Goals</h2>
+    <p>In the short-term, the task force will create awareness of the existing lack of scrutiny regarding game evaluation methods, as well as encourage more researchers in academia and industry to participate in this discussion.  This will be done via special sessions at conferences, special issues of appropriate journals like the IEEE Transactions on Games, and by organizing workshops. In the long term, the task force will:</p>
+      <ul>
+        <li>create an archive of published game (content) evaluation methods, along with data regarding their reliability, strengths and weaknesses. Creating a taxonomy and survey of these methods is a first step in this direction;</li>
+        <li>identify approaches for game (content) evaluation that have not yet been fully explored and encourage research in this direction;</li>
+        <li>develop game (content) evaluation methods that can realistically be used in AI-assisted game design;</li>
+        <li>develop a network across different research communities that use and are otherwise interested in game evaluation, as well as introduce connections with the games industry.</li>
+      </ul>
+          </div>
+      </div>
+  </div>
+</section>
+
+<footer class="page-footer bg-dark">
+    <div class="container">
+        <div class="row">
+          <div class="col-md-10 col-sm-6 col-xs-12">
+            <p class="text-light py-3">Copyright &copy; 2020 All Rights Reserved by 
+         <a href="#" class="text-light">Automatic Gameplay Evaluation</a>
+            </p>
+          </div>
+
+          <div class="col-md-2 col-sm-6 col-xs-12">
+            <div class="py-3 font-weight-bold">
+              <a class="text-light px-2" href="#"><i class="fa fa-facebook fa-lg"></i></a>
+              <a class="text-light px-2" href="#"><i class="fa fa-twitter fa-lg"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+</footer>
+    
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.slim.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
